@@ -1,0 +1,57 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffead8;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    background-color: #f28500;
+    position: sticky;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: inline;
+    margin: 0 10px;
+}
+.main{
+    background-color: #ffead8;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    line-height: 3em;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 300px;
+}
+.item-content{
+    padding: 10px 0;
+}
+.button{
+   background-color: #f28500;
+   padding: 8px;
+}
+.footer{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-item{
+    margin: 5px;
+}
