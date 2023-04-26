@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="放上網站或服務的一些描述">
+    <meta name="description" content="鄭佳雯的個人網站">
     <meta name="keywords" content="網頁設計、前端設計、個人網站">
-    <meta name="author" content="放上出版者的資訊">
-    <meta name="generator" content="編輯器名稱">
-    <meta name="copyright" content="Cheng,Jia-Wen">
-    <meta name="distribution" content="發佈所在地區">
+    <meta name="author" content="鄭佳雯 Jammie Jia-Wen jammiecheng">
+    <meta name="generator" content="VSCode">
+    <meta name="copyright" content="Jia-Wen, Cheng">
+    <meta name="distribution" content="Taiwan 台灣 臺灣">
     <meta http-equiv="Content-Language" content="zh-TW">
-    <title>JiaWen's Website</title>
+    <title>Jammie Cheng's website</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4e5c1ad659.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="header">
-      <nav class="container nav">
-        <div class="nav-item">
-          <a>
-            <img src="logo.png" alt="">
-          </a>
-        </div>
-        <div class="nav-item">
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Works</li></a>
-            <a href="#"><li>Contact</li></a>
-          </ul>
-        </div>
-      </nav>
+    <header class="container space-between">
+        <a href="#" class="logo">Jammie</a>
+        <ul class="nav space-between">
+            <a href="">
+                <li class="nav-item">Home</li>
+            </a>
+            <a href="">
+                <li class="nav-item">Projects</li>
+            </a>
+            <a href="">
+                <li class="nav-item">Contact</li>
+            </a>
+        </ul>
     </header>
-    <main class="main">
-      <div class="container">
-        <img src="https://fakeimg.pl/1200x500/ffead8?text=Welecome" alt="">
-        <div class="introduce">
-          <div class="title"><h1>個人經歷</h1></div>
-          <div class="content">
-            <div class="item"><img src="https://fakeimg.pl/300x500" alt=""></div>
-            <div class="item">
-              對我個人而言，介紹不僅僅是一個重大的事件，還可能會改變我的人生。而這些並不是完全重要，更加重要的問題是，一般來說，廷德爾曾經認為，知識不存在的地方，愚昧就自命為科學。想必各位已經看出了其中的端倪。若到今天結束時我們都還無法釐清介紹的意義，那想必我們昨天也無法釐清。蒲柏柏講過一段耐人尋思的話，聲音聽起來應當象意念的回音。這段話非常有意思。深入的探討介紹，是釐清一切的關鍵。領悟其中的道理也不是那麼的困難。介紹絕對是史無前例的。塞萬提斯講過，有時一扇門雖然關上了，其餘的門卻是敞開的。希望大家能從這段話中有所收穫。
+    <main>
+        <section class="section-primary container space-between">
+            <div class="text-wrap space-between">
+                <p class="title">Hi, I'm Jia-Wen Cheng</p>
+                <p class="content">I’m a front-end learner based in Taiwan. Now I’m studying in the Department of
+                    Information Management at NTUST.</p>
             </div>
-          </div>
-        </div>
-        <div class="works container">
-          <div class="title"><h1>作品集</h1></div>
-          <div class="content">
-            <div class="item">
-              <img src="https://fakeimg.pl/300x300" alt="">
-              <div class="item-content">
-                若發現問題比我們想像的還要深奧，那肯定不簡單。我們都很清楚，這是個嚴謹的議題。陳壽講過一段耐人尋思的話，愛好文雅，廣延詩賦，以知得失。這句話把我們帶到了一個新的維度去思考這個問題。經過上述討論，從這個角度來看，介紹因何而發生？
-              </div>
-              <a class="button" href="#">See more</a>
+            <img src="https://fakeimg.pl/500/" alt="personal-photo" class="personal-photo">
+        </section>
+        <section class="section-secondary container">
+            <h3 class="sub-title">Projects</h3>
+            <div class="item-list">
+                <div class="item">
+                    <img src="https://fakeimg.pl/500/" alt="">
+                    <div>
+                        <a href="#" class="content">title</a>
+                        <p>content</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://fakeimg.pl/500/" alt="">
+                    <div>
+                        <a href="#" class="content">title</a>
+                        <p>content</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://fakeimg.pl/500/" alt="">
+                    <div>
+                        <a href="#" class="content">title</a>
+                        <p>content</p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-              <img src="https://fakeimg.pl/300x300" alt="">
-              <div class="item-content">
-                若發現問題比我們想像的還要深奧，那肯定不簡單。我們都很清楚，這是個嚴謹的議題。陳壽講過一段耐人尋思的話，愛好文雅，廣延詩賦，以知得失。這句話把我們帶到了一個新的維度去思考這個問題。經過上述討論，從這個角度來看，介紹因何而發生？
-              </div>
-              <a class="button" href="#">See more</a>
+        </section>
+        <section class="section-tertiary container">
+            <h3 class="sub-title">About</h3>
+            <div class="tertiary-wrap">
+                <img src="https://fakeimg.pl/500/" alt="">
+                <div>
+                    <p>主要專長是程式開發，目前專注於網頁及APP開發，並且持續學習更多有關UI/UX、前後端的知識。</p>
+                    <p class="bold">Used Technologies</p>
+                    <ul>
+                        <li>Git/Github</li>
+                        <li>HTML5/CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
             </div>
-            <div class="item">
-              <img src="https://fakeimg.pl/300x300" alt="">
-              <div class="item-content">
-                若發現問題比我們想像的還要深奧，那肯定不簡單。我們都很清楚，這是個嚴謹的議題。陳壽講過一段耐人尋思的話，愛好文雅，廣延詩賦，以知得失。這句話把我們帶到了一個新的維度去思考這個問題。經過上述討論，從這個角度來看，介紹因何而發生？
-              </div>
-              <a class="button" href="#">See more</a>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
     </main>
-    <footer class="footer container">
-      <div class="footer-item copyright">
-        &copy; Cheng, Jia-Wen
-      </div>
-      <div class="footer-item socialmedia">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
-      </div>
+    <footer class="container space-between">
+        <a href="#" class="logo">Jammie</a>
+        &copy; 2023 Jia-Wen, Cheng
+        <ul class="nav space-between">
+            <a href="https://github.com/jammiecheng" target="_blank">
+                <li class="nav-item">Github</li>
+            </a>
+            <a href="https://codepen.io/imjjw" target="_blank">
+                <li class="nav-item">Codepen</li>
+            </a>
+            <a href="" target="_blank">
+                <li class="nav-item">Facebook</li>
+            </a>
+        </ul>
     </footer>
 </body>
+
 </html>
