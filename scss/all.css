@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  font-size: 20px;
+  background: rgb(255, 239, 186);
+  background: linear-gradient(315deg, rgb(255, 239, 186) 0%, rgb(255, 255, 255) 50%, rgb(236, 233, 230) 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+html .container,
+body .container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+html .space-between,
+body .space-between {
+  display: flex;
+  justify-content: space-between;
+}
+html .bold,
+body .bold {
+  font-weight: bold;
+  margin-top: 20px;
+}
+html .description,
+body .description {
+  color: #696969;
+}
+html a,
+body a {
+  text-decoration: none;
+  color: #000;
+}
+html ul,
+body ul {
+  display: flex;
+  gap: 40px;
+}
+html .logo,
+body .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 18px;
+  text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+html .title,
+body .title {
+  font-size: 36px;
+}
+html .content,
+body .content {
+  font-size: 24px;
+  line-height: 1.5;
+}
+html .project-title,
+body .project-title {
+  font-size: 28px;
+}
+html .sub-title,
+body .sub-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header {
+  width: 100%;
+  align-items: center;
+}
+header .nav a:hover {
+  color: #555;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section-primary {
+  align-items: center;
+  padding-top: 100px;
+}
+section .text-wrap {
+  flex-direction: column;
+  margin: 0 30px;
+}
+section .personal-photo {
+  max-width: 512px;
+}
+section .item {
+  display: flex;
+}
+section .item div {
+  padding: 20px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .item-content {
+  max-width: 640px;
+}
+section .image {
+  width: 600px;
+  min-height: 400px;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+section .image .slide {
+  opacity: 0;
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left top;
+     object-position: left top;
+  position: absolute;
+  transition: all 1s ease;
+  z-index: 1;
+}
+section .image .slide.active {
+  opacity: 1;
+}
+section .arrow {
+  position: absolute;
+  top: 50%;
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+section .arrow:focus {
+  outline: 0;
+  /*或none*/
+}
+section .left {
+  left: 0;
+}
+section .right {
+  right: 0;
+}
+section .tertiary-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+section .tertiary-wrap img {
+  max-width: 300px;
+}
+section .tertiary-wrap div {
+  max-width: 400px;
+  padding: 20px;
+  line-height: 1.5;
+}
+section .tertiary-wrap div ul {
+  list-style: circle;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}/*# sourceMappingURL=all.css.map */
