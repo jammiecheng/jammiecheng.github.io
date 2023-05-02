@@ -135,6 +135,10 @@ table {
 }
 
 /* custom */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Courier New", Courier, monospace;
@@ -146,6 +150,16 @@ body {
   align-items: center;
   flex-direction: column;
   transition: all 0.5s;
+}
+html a,
+body a {
+  text-decoration: none;
+  color: #000;
+}
+html ul,
+body ul {
+  display: flex;
+  gap: 40px;
 }
 html .container,
 body .container {
@@ -160,21 +174,17 @@ body .space-between {
 html .bold,
 body .bold {
   font-weight: bold;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 html .description,
 body .description {
   color: #696969;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-html a,
-body a {
-  text-decoration: none;
-  color: #000;
-}
-html ul,
-body ul {
-  display: flex;
-  gap: 40px;
+html .description li,
+body .description li {
+  list-style: circle;
 }
 html .logo,
 body .logo {
@@ -203,6 +213,10 @@ body .sub-title {
   text-align: center;
   margin-bottom: 30px;
 }
+html .nav,
+body .nav {
+  padding: 50px 0;
+}
 
 header {
   width: 100%;
@@ -212,23 +226,27 @@ header .nav a:hover {
   color: #555;
 }
 
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-section-primary {
-  align-items: center;
-  padding-top: 100px;
-}
-section .text-wrap {
+main {
+  display: flex;
   flex-direction: column;
-  margin: 0 30px;
+  align-items: center;
+  gap: 200px;
+  margin: 200px 0;
+}
+
+section .text-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 section .personal-photo {
   max-width: 512px;
 }
 section .item {
   display: flex;
+  gap: 30px;
 }
 section .item div {
   padding: 20px;
@@ -240,26 +258,28 @@ section .item div {
 section .item-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 section .item-content {
-  max-width: 640px;
+  width: 500px;
 }
 section .image {
-  width: 600px;
-  min-height: 400px;
+  width: 500px;
+  height: 400px;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 section .image .slide {
   opacity: 0;
-  width: 600px;
-  height: 400px;
+  width: 90%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left top;
      object-position: left top;
   position: absolute;
   transition: all 1s ease;
+  left: 25px;
   z-index: 1;
 }
 section .image .slide.active {
@@ -285,7 +305,7 @@ section .right {
 }
 section .tertiary-wrap {
   display: flex;
-  justify-content: space-evenly;
+  gap: 50px;
 }
 section .tertiary-wrap img {
   max-width: 300px;
@@ -305,6 +325,54 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  html .container, body .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html .container, body .container {
+    max-width: 960px;
+  }
+  main .section-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  section .text-wrap {
+    align-items: center;
+  }
+  section .personal-photo {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  section .item {
+    flex-direction: column;
+  }
+  section .item-list {
+    gap: 30px;
+  }
+  section .tertiary-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html .container, body .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html .container, body .container {
+    max-width: 540px;
+  }
+  footer {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 50px;
+  }
 }/*# sourceMappingURL=all.css.map */
