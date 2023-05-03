@@ -17,19 +17,24 @@
     <link rel="stylesheet" href="scss/all.css" type="text/css">
 </head>
 <body>
-    <header class="container space-between" id="header">
-        <a href="#header" class="logo">Jammie</a>
-        <ul class="nav">
-            <a href="#header">
-                <li class="nav-item">Home</li>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#header" class="logo">Jammie</a>
+            <ul class="nav">
+                <a href="#header">
+                    <li class="nav-item">Home</li>
+                </a>
+                <a href="#projects">
+                    <li class="nav-item">Projects</li>
+                </a>
+                <a href="#about">
+                    <li class="nav-item">About</li>
+                </a>
+            </ul>
+            <a href="#" class="burgur_btn">
+                <i class="fas fa-bars"></i>
             </a>
-            <a href="#projects">
-                <li class="nav-item">Projects</li>
-            </a>
-            <a href="#about">
-                <li class="nav-item">About</li>
-            </a>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="space-between section-primary container">
@@ -140,6 +145,7 @@
             </a>
         </ul>
     </footer>
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/all.js"></script>
 </body>
 </html>

@@ -213,14 +213,24 @@ body {
         margin-bottom: 30px;
     }
     .nav{
-        padding: 50px 0;
+        padding: 30px 0;
     }
 }
 
-header {
+.header {
     width: 100%;
-    align-items: center;
-
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .burgur_btn{
+        display: none;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+    }
     .nav a:hover {
         color: #555;
     }
@@ -297,7 +307,7 @@ section {
         color: #000;
         font-size: 30px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 2;
 
         &:focus {
             outline: 0;
@@ -342,7 +352,7 @@ footer {
     align-items: center;
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1400px){
     html, body{
         .container{
             max-width: 1140px;
@@ -350,10 +360,18 @@ footer {
     }
 }
 
-@media only screen and (max-width:992px){
+@media only screen and (max-width:1200px){
     html, body{
         .container{
             max-width: 960px;
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    html, body{
+        .container{
+            max-width: 720px;
         }
     }
     main{
@@ -389,7 +407,37 @@ footer {
 @media only screen and (max-width:768px){
     html, body{
         .container{
-            max-width: 720px;
+            max-width: 540px;
+        }
+    }
+
+    header{
+        position: fixed;
+    }
+
+    .header{
+        z-index: 3;
+        .nav{
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            max-height: 0;
+            overflow: hidden;
+            flex-direction: column;
+            background-color: #fff;
+            transform: translateY(100%);
+            &-item{
+                margin: auto 30px;
+            }
+        }
+        .burgur_btn{
+            display: flex;
+        }
+        .show{
+            max-height: 300px;
+            display: flex;
         }
     }
 }
@@ -397,7 +445,7 @@ footer {
 @media only screen and (max-width:576px){
     html, body{
         .container{
-            max-width: 540px;
+            max-width: 100%;
         }
     }
     footer{
