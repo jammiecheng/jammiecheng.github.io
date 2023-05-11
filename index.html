@@ -2,150 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="鄭佳雯的個人網站">
-    <meta name="keywords" content="網頁設計、前端設計、個人網站">
-    <meta name="author" content="鄭佳雯 Jammie Jia-Wen jammiecheng">
-    <meta name="generator" content="VSCode">
-    <meta name="copyright" content="Jia-Wen, Cheng">
-    <meta name="distribution" content="Taiwan 台灣 臺灣">
-    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="鄭佳雯的個人網站" />
+    <meta name="keywords" content="網頁設計、前端設計、個人網站" />
+    <meta name="author" content="鄭佳雯 Jammie Jia-Wen jammiecheng" />
+    <meta name="generator" content="VSCode" />
+    <meta name="copyright" content="Jia-Wen, Cheng" />
+    <meta name="distribution" content="Taiwan 台灣 臺灣" />
+    <meta http-equiv="Content-Language" content="zh-TW" />
     <title>Jammie Cheng's website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="scss/all.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="scss/all.css" type="text/css" />
 </head>
+
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <a href="#header" class="logo">Jammie</a>
-            <ul class="nav">
-                <a href="#header">
-                    <li class="nav-item">Home</li>
-                </a>
-                <a href="#projects">
-                    <li class="nav-item">Projects</li>
-                </a>
-                <a href="#about">
-                    <li class="nav-item">About</li>
-                </a>
+    <nav class="ph-50 container d-flex space-between g-20">
+        <a href="" class="logo">Jammie</a>
+        <ul class="menu d-flex">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">Projects</a></li>
+            <li class="menu-item"><a href="">About</a></li>
+        </ul>
+        <span class="material-icons">menu</span>
+    </nav>
+    <main class="d-flex column">
+        <section class="header container d-flex space-between g-20 ai-c reverse">
+            <div class="text-wrap">
+                <h1>Jammie Cheng</h1>
+                <h6>
+                    您好！我是鄭佳雯，目前就讀於臺灣科技大學資訊管理系，學習過多項程式語言，目前專注於網頁設計及
+                    App 開發。
+                </h6>
+                <div class="divider"></div>
+                <ul>
+                    <li>喜歡學習新技術，利用課餘時間精進自身能力。</li>
+                    <li>
+                        對前端有極大的興趣，創造美觀及有良好使用者體驗的網站及介面是有成就感的事。
+                    </li>
+                    <li>
+                        具有不同產業打工的經驗，對於文書處理、客戶服務有一定的基礎。
+                    </li>
+                </ul>
+            </div>
+            <img src="images/person-1.jpeg" alt="personal photo" />
+        </section>
+        <section class="projects container">
+            <h3 class="ph-50 center">Projects</h3>
+            <ul class="list d-flex g-20">
+                <li class="list-item">
+                    <div class="center"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h6 class="center">課堂作品</h6>
+                    <p>
+                        使用技術：Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Doloribus, laudantium!
+                    </p>
+                </li>
+                <li class="list-item">
+                    <div class="center"><i class="fa-solid fa-school"></i></div>
+                    <h6 class="center">專題作品（進行中）</h6>
+                    <p>
+                        使用技術：Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Doloribus, laudantium!
+                    </p>
+                </li>
+                <li class="list-item">
+                    <div class="center"><i class="fa-sharp fa-solid fa-book-open-reader"></i></div>
+                    <h6 class="center">線上課程（進行中）</h6>
+                    <p>
+                        使用技術：Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Doloribus, laudantium!
+                    </p>
+                </li>
             </ul>
-            <a href="#" class="burgur_btn">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-    </header>
-    <main>
-        <section class="space-between section-primary container">
-            <div class="text-wrap space-between">
-                <p class="title">Hi, I'm Jia-Wen Cheng</p>
-                <p class="content">I’m a front-end learner based in Taiwan. Now I’m studying in the Department of
-                    Information Management at NTUST.</p>
-            </div>
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81otknDLyV8LmTrMQG_52OU4683Gb6S1x1tUGr1fZo9J8O1WQ7i9_xAiednyv0aCxdnXyOy7S-R5nf8K6aja2QnoXWE7=w3024-h1556" alt="personal-photo" class="personal-photo">
         </section>
-        <section class="section-secondary container" id="projects">
-            <h3 class="sub-title">Projects</h3>
-            <div class="item-list">
-                <div class="item">
-                    <div class="image" id="image1">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pFcEs1wphne6ojTBScdkY3twvQlYhTj_3p_XZM7l_TqWy8cqWAalY8IzUTuOfMBEjuMrn4UJ5vji1n-fwSxz4DkKydKQ=w2560-h1249" alt="Corgi web design" class="slide active">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81oTCgb0-oLeF2_jlQmwM5bKxQtqt9GrWKNvsHvrHzOo9xPvIBNQq1ChdFu6cerMzwMd3c48z27V6H60lPBvTWgznmXl=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81r4zjPPfcuY4I2bCeFCO2USvEN4DH98aqIog5RjO2AWtKqkcax_tn1w1f40Ksz0dNyk4MSOUl_VmIfSXAZTFgNDm76y=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rlqA0331BGpjXWsHW89SzS1Lkbmh23O5lml6UqGY7fy902XXwgMSqq7ziZxliIyb70zB3QUYoYSGkwOvnI-TXfR0LP=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rlXGY7y6xP5NLshR4CaB6OCYoK4zeJw_JDxDPq3-HWvHiEvUOFNe_y9fEAVscL7VZbSd2TJ__2ohEh0mcyyNbxjw9TfA=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81q44vv_cNlfNzdUvYqAQCqNlhKt2TK4-BhzQqw_FhfzWzRj1YzQM7z5riSJYi3cXePBZ5DWOqsNqh2b2xCbJJGWkJyE=w3912-h2324" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qXKO0dsju-KtWYwlz5KEv0Vpgy1Id1-BJ8Gt826UeBtU3ejydOCxB8xwoyGArd60oXvm8UqZe5byXlq9mNSUM0ywMNyA=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qWK9w4L7BslQWTO226bUdw4ufQKIxhtCPb88ltJcVHF5mXMxIuEVHrLaXeQCuTW42BxT3IuUniWZ3DT6hWmyejnOV69w=w3912-h2324" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pGZDW-sd1nhlIVvNeSRx3OTh_KZC7bdLzxay_XEw-nFgfPdivpJfOA44zo94cKazmJdvjbRTf8-NndKsvYxuJyznoUIg=w2560-h1249" alt="" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pkNCLo_JS-lx7X2g2EDUsUcDM8WXN3EODtgACkAco-3Hxj38eEZp5RIdaqX4uIiLPUawBvboEXNvuJNlOxJLJq7MMvLQ=w2560-h1249" alt="" class="slide">
-                        <!-- 左箭頭 -->
-                        <button id="left1" class="arrow left">
-                            <i class="fa-solid fa-arrow-left-long"></i>
-                        </button>
-                        <!-- 右箭頭 -->
-                        <button id="right1" class="arrow right">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                    <div class="item-content">
-                        <a href="https://github.com/jammiecheng/corgis-website" class="content" target="_blank">寵物飼料購買平台</a>
-                        <p class="description">大二時選修網頁製作，依據課堂要求所做出的作品。把原本的基礎網站架構重新改寫成 使用 Laravel 框架的 PHP 網站。網站功能包含商品及使用者的 CRUD，利用 MySQL 將商品及使用者資料存進資料庫。</p>
-                        <ul class="description">
-                            <li class="description-item">HTML5</li>
-                            <li class="description-item">CSS3</li>
-                            <li class="description-item">JavaScript</li>
-                            <li class="description-item">PHP</li>
-                            <li class="description-item">Webpack</li>
-                            <li class="description-item">MySQL</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image" id="image2">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pUVvoA6ULA-YGDcDxIj7RnP62QbgIh1PgVHGv8clgz7J62NVcsmSx6tneXsn_194FBG6327ZFoxWepDvFrYa7UkYeFJA=w2560-h1249" alt="RWD practice" class="slide active">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81on2_PlbdxURYWKiz0AO7NWvCpR07hdMHJmepM0fVG3NLOJnji5VfSeD5TDxi_X0_UaFZrE6GxnYj2itb4FoiB9_cLPLg=w2560-h1249" alt="1728px" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81omj2yT4OJv8Ojlr8AxYy1lQGbwHJpqDyyqfxF8vMp00giAi8cTwltvWuW9iLqW_wqMxPZfJDxxDtxD1re9jRdBFjXr=w2560-h1249" alt="1024px" class="slide">
-                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81o7OJj5wXX7pjFJpNW_KV_TrZCBSkwaxO0DbZywfA-WbsrObFevIuj8aSF20JUs1vu2DT0ssFjV-dwbJ78b3xPHkiXZbg=w2560-h1249" alt="430px" class="slide">
-                        <!-- 左箭頭 -->
-                        <button id="left2" class="arrow left">
-                            <i class="fa-solid fa-arrow-left-long"></i>
-                        </button>
-                        <!-- 右箭頭 -->
-                        <button id="right2" class="arrow right">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                    <div class="item-content">
-                        <a href="https://codepen.io/imjjw/pen/rNqGBVJ" class="content" target="_blank">切圖練習</a>
-                        <p class="description">利用 Figma 中其他使用者提供的模板來練習切版技能。</p>
-                        <ul class="description">
-                            <li class="description-item">HTML5</li>
-                            <li class="description-item">CSS3</li>
-                        </ul>
-                    </div>
-                </div>
+        <section class="about container">
+            <h3 class="ph-50 center">About</h3>
+            <div class="skill-btn">
+                <button class="fe-btn">Front-End</button>
+                <button class="be-btn">Back-End</button>
+                <button class="os-btn">Others</button>
             </div>
+            <ul class="front-end">
+                <li class="d-flex space-between">
+                    <h6>HTML / CSS / RWD</h6>
+                    <p>中階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>JavaScript / JQuery</h6>
+                    <p>初階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Bootstrap</h6>
+                    <p>初階</p>
+                </li>
+            </ul>
+            <ul class="back-end hidden">
+                <li class="d-flex space-between">
+                    <h6>Java</h6>
+                    <p>中階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Kotlin</h6>
+                    <p>中階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Python</h6>
+                    <p>初階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>PHP</h6>
+                    <p>初階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Database</h6>
+                    <p>初階</p>
+                </li>
+            </ul>
+            <ul class="others hidden">
+                <li class="d-flex space-between">
+                    <h6>Git</h6>
+                    <p>初階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Figma</h6>
+                    <p>初階</p>
+                </li>
+                <li class="d-flex space-between">
+                    <h6>Webpack</h6>
+                    <p>初階</p>
+                </li>
+            </ul>
         </section>
-        <section class="section-tertiary container" id="about">
-            <h3 class="sub-title">About</h3>
-            <div class="tertiary-wrap">
-                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rhHFQyirtlQIZwdv3RmZa9w5f-sKL6pm5dXgsAaAVxhZnFgq_2j1y4wbPO1X0EXrpVwDpq2RYJnC7vMqqnIHSll-E7Yg=w1960-h3450" alt="personal-photo">
-                <div>
-                    <p>主要專長是程式開發，目前專注於網頁及 APP 開發，並且持續學習更多有關 UI/UX、前後端的知識。</p>
-                    <p class="bold">Used Technologies</p>
-                    <ul>
-                        <li>Git/Github</li>
-                        <li>HTML5/CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Kotlin</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
+        <section class="contact container">
+            <h3 class="ph-50 center">Contact</h3>
+            <div class="d-flex g-20">
+                <img src="images/person-2.JPG" alt="personal photo" />
+                <ul class="d-flex column center">
+                    <li class="d-flex g-20">
+                        <span class="material-icons">call</span>0966721565
+                    </li>
+                    <li class="d-flex g-20">
+                        <span class="material-icons">mail</span>jun910811@gmail.com
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="container space-between">
-        <div>
-            <a href="#header" class="logo">Jammie</a>
-            &copy; 2023 Jia-Wen, Cheng
+    <footer class="ph-50 container d-flex space-between">
+        <div class="d-flex g-20 center">
+            <a href="" class="logo">Jammie</a>
+            <p>&copy;2023 Jia-Wen, Cheng</p>
         </div>
-        <ul class="nav">
-            <a href="https://github.com/jammiecheng" target="_blank">
-                <li class="nav-item">Github</li>
-            </a>
-            <a href="https://codepen.io/imjjw" target="_blank">
-                <li class="nav-item">Codepen</li>
-            </a>
-            <a href="#header">
-                <li class="nav-item">Home</li>
-            </a>
+        <ul class="menu d-flex center">
+            <li class="menu-item">
+                <a href="https://github.com/jammiecheng" target="_blank">Github</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://codepen.io/imjjw" target="_blank">Codepen</a>
+            </li>
+            <li class="menu-item"><a href="https://hackmd.io/@JW29" target="_blank">HackMD</a></li>
         </ul>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/all.js"></script>
 </body>
+
 </html>

@@ -1,89 +1,21 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -93,17 +25,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -111,20 +34,16 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -135,295 +54,264 @@ table {
 }
 
 /* custom */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
 body {
-  font-family: "Courier New", Courier, monospace;
   width: 100%;
-  font-size: 20px;
-  background: rgb(255, 239, 186);
+  height: 100%;
   background: linear-gradient(315deg, rgb(255, 239, 186) 0%, rgb(255, 255, 255) 50%, rgb(236, 233, 230) 100%);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  transition: all 0.5s;
+  font-size: 20px;
+  font-family: "Courier Prime", monospace;
+  font-family: "Noto Serif TC", serif;
+  line-height: 1.5;
 }
-html a,
-body a {
-  text-decoration: none;
-  color: #000;
-}
-html ul,
-body ul {
-  display: flex;
-  gap: 40px;
-}
-html .container,
 body .container {
   max-width: 1320px;
   margin: 0 auto;
 }
-html .space-between,
-body .space-between {
+body .d-flex {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .g-20 {
+  gap: 20px;
+}
+body .space-between {
   justify-content: space-between;
 }
-html .bold,
-body .bold {
-  font-weight: bold;
-  padding: 20px 0;
+body .column {
+  flex-direction: column;
 }
-html .description,
-body .description {
-  color: #696969;
-  flex-wrap: wrap;
-  gap: 30px;
+body a {
+  color: #000;
+  text-decoration: none;
 }
-html .description li,
-body .description li {
-  list-style: circle;
-}
-html .logo,
 body .logo {
-  color: white;
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
-  padding: 18px;
+  font-style: italic;
   text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
-html .title,
-body .title {
-  font-size: 36px;
+body .logo:hover {
+  border-bottom: 0px;
 }
-html .content,
-body .content {
-  font-size: 24px;
-  line-height: 1.5;
+body h1 {
+  font-size: 32px;
 }
-html .project-title,
-body .project-title {
+body h3 {
   font-size: 28px;
 }
-html .sub-title,
-body .sub-title {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
+body h6 {
+  font-size: 24px;
 }
-html .nav,
-body .nav {
-  padding: 30px 0;
+body .menu-item {
+  padding: 10px 30px;
+}
+body .menu a:hover {
+  border-bottom: 1px solid #000;
+}
+body .ph-50 {
+  padding: 50px 0;
+}
+body .center {
+  text-align: center;
+  align-items: center;
+}
+body .divider {
+  border-bottom: 1px solid lightgray;
 }
 
-.header {
-  width: 100%;
-}
-.header .container {
-  display: flex;
+nav {
   align-items: center;
-  justify-content: space-between;
 }
-.header .burgur_btn {
+nav .material-icons {
   display: none;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-}
-.header .nav a:hover {
-  color: #555;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 200px;
-  margin: 200px 0;
+  padding: 100px 0;
 }
 
-section .text-wrap {
-  max-width: 80%;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 20px;
+.header .text-wrap {
+  max-width: 50%;
 }
-section .personal-photo {
-  max-width: 512px;
+.header .text-wrap > * {
+  padding: 10px 0;
 }
-section .item {
-  display: flex;
-  gap: 30px;
-}
-section .item div {
-  padding: 20px;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-section .item-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section .item-content {
-  width: 500px;
-}
-section .image {
-  width: 500px;
+.header img {
+  width: 45%;
   height: 400px;
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+  -o-object-position: center;
+     object-position: center;
 }
-section .image .slide {
-  opacity: 0;
-  width: 90%;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left top;
-     object-position: left top;
-  position: absolute;
-  transition: all 1s ease;
-  left: 25px;
-  z-index: 1;
+
+.projects ul {
+  flex-wrap: nowrap;
 }
-section .image .slide.active {
-  opacity: 1;
+.projects .list-item > * {
+  padding: 10px 0;
 }
-section .arrow {
-  position: absolute;
-  top: 50%;
-  color: #000;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 2;
+.projects img {
+  width: 400px;
+  height: 300px;
 }
-section .arrow:focus {
-  outline: 0;
-  /*或none*/
-}
-section .left {
-  left: 0;
-}
-section .right {
-  right: 0;
-}
-section .tertiary-wrap {
-  display: flex;
+
+.about .g-50 {
   gap: 50px;
 }
-section .tertiary-wrap img {
-  max-width: 300px;
+.about .skill-btn {
+  padding: 0 0 50px 0;
 }
-section .tertiary-wrap div {
-  max-width: 400px;
-  padding: 20px;
-  line-height: 1.5;
+.about .column-center {
+  margin: auto 0;
 }
-section .tertiary-wrap div ul {
-  list-style: circle;
-  flex-wrap: wrap;
-  gap: 25px;
+.about .d-flex {
+  flex-wrap: nowrap;
+}
+.about button {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid;
+  background: none;
+  font-family: "Courier Prime", monospace;
+  font-family: "Noto Serif TC", serif;
+}
+.about button:hover {
+  background: #167c80;
+  border: #167c80;
+  color: #fff;
+  transition: 0.4s;
+}
+.about ul {
+  width: 100%;
+}
+.about li {
+  align-items: center;
+}
+.about .hidden {
+  display: none;
 }
 
-footer {
-  width: 100%;
-  display: flex;
+.contact {
   align-items: center;
+}
+.contact img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.contact ul {
+  align-items: flex-start;
+}
+.contact li {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
 }
 
 @media only screen and (max-width: 1400px) {
-  html .container,
   body .container {
     max-width: 1140px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  html .container,
   body .container {
     max-width: 960px;
   }
 }
 @media only screen and (max-width: 992px) {
-  html .container,
   body .container {
     max-width: 720px;
   }
-  main .section-primary {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  .header .text-wrap {
+    max-width: 100%;
   }
-  section .text-wrap {
+  .header img {
+    display: none;
+  }
+  .projects ul {
+    flex-wrap: wrap;
     align-items: center;
   }
-  section .personal-photo {
-    max-width: 80%;
-    margin: 0 auto;
+  .projects li {
+    display: flex;
+    justify-content: center;
   }
-  section .item {
+  .projects img {
+    height: 300px;
+  }
+  footer {
     flex-direction: column;
-  }
-  section .item-list {
+    align-items: center;
     gap: 30px;
-  }
-  section .tertiary-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
   }
 }
 @media only screen and (max-width: 768px) {
-  html .container,
+  body {
+    font-size: 16px;
+  }
   body .container {
     max-width: 540px;
   }
-  header {
-    position: fixed;
+  body h1 {
+    font-size: 28px;
   }
-  .header {
-    z-index: 3;
+  body h3 {
+    font-size: 24px;
   }
-  .header .nav {
+  body h6 {
+    font-size: 20px;
+  }
+  nav {
+    position: relative;
+  }
+  nav .d-flex {
     display: none;
+  }
+  nav .material-icons {
+    display: block;
+  }
+  nav .show {
+    display: block;
     position: absolute;
+    top: 100px;
     left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 0;
-    overflow: hidden;
+  }
+  nav .menu-item {
+    padding-left: 0;
+  }
+  .projects li {
     flex-direction: column;
-    background-color: #fff;
-    transform: translateY(100%);
+    align-items: center;
   }
-  .header .nav-item {
-    margin: auto 30px;
+  .contact img {
+    width: 100px;
+    height: 100px;
   }
-  .header .burgur_btn {
-    display: flex;
-  }
-  .header .show {
-    max-height: 300px;
-    display: flex;
-  }
-  footer {
-    font-size: 16px;
-    flex-direction: column;
-    gap: 50px;
+  .about button {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 576px) {
-  html .container,
   body .container {
     max-width: 100%;
+    margin: 0 30px;
+  }
+  footer .menu {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=all.css.map */
