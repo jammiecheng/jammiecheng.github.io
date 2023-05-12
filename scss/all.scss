@@ -182,8 +182,13 @@ main {
     ul{
         flex-wrap: nowrap;
     }
-    .list-item>*{
-        padding: 10px 0;
+    li{
+        width: 33.33%;
+        justify-content: flex-start;
+        align-items: center;
+        &>*{
+            padding: 10px 0;
+        }
     }
     img{
         width: 400px;
@@ -207,10 +212,12 @@ main {
 
     button {
         padding: 18px;
+        margin: 0 20px;
         font-size: 18px;
         font-weight: bold;
         border: 1px solid #000;
         background: none;
+        max-width: 150px;
         font-family: 'Courier Prime', monospace;
         font-family: 'Noto Serif TC', serif;
 
@@ -287,10 +294,7 @@ main {
             align-items: center;
         }
         li{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+            width: 100%;
         }
         img{
             height: 300px;
@@ -357,8 +361,31 @@ main {
             margin: 0 30px;
         }
     }
+    .skill-btn{
+        text-align: center;
+        button{
+            margin: 0;
+        }
+    }
     footer{
         .menu{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .skill-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        button{
+            margin: 0;
+        }
+    }
+    .about{
+        li{
             flex-direction: column;
         }
     }
