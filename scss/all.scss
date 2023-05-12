@@ -146,6 +146,10 @@ body {
     .divider {
         border-bottom: 1px solid lightgray;
     }
+
+    li{
+        padding: 10px 0;
+    }
 }
 
 nav {
@@ -205,7 +209,7 @@ main {
         padding: 18px;
         font-size: 18px;
         font-weight: bold;
-        border: 1px solid;
+        border: 1px solid #000;
         background: none;
         font-family: 'Courier Prime', monospace;
         font-family: 'Noto Serif TC', serif;
@@ -285,6 +289,8 @@ main {
         li{
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         img{
             height: 300px;
@@ -329,12 +335,6 @@ main {
         }
         .menu-item{
             padding-left:  0;
-        }
-    }
-    .projects{
-        li{
-            flex-direction: column;
-            align-items: center;
         }
     }
     .contact{
